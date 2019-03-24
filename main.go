@@ -18,7 +18,7 @@ func main() {
 	DownloadFile("Build/BuildTools.jar", "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar")
 
 	println("Building Spigot/Craftbukkit")
-	cmd := exec.Command("java", "-jar", "BuildTools.jar")
+	cmd := exec.Command("java", "-Xms512M", "-jar", "BuildTools.jar")
 	cmd.Dir = "./Build"
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
