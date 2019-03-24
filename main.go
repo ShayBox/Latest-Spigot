@@ -26,6 +26,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	cmd.Wait()
 }
 
 // DownloadFile will download a url to a local file. It's efficient because it will
