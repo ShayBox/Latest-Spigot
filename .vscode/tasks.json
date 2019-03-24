@@ -6,13 +6,15 @@
     {
       "label": "Run",
       "type": "shell",
-      "command": "go run main.go",
+      "command": "go",
+      "args": ["run", "main.go"],
       "problemMatcher": [],
     },
     {
       "label": "Build",
       "type": "shell",
       "command": "gox",
+      "args": ["-output", "bin/{{.OS}}_{{.Arch}}"],
       "problemMatcher": [],
     },
   ],
