@@ -20,7 +20,12 @@ func main() {
 	println("Building Spigot/Craftbukkit")
 	cmd := exec.Command("java", "-jar", "BuildTools.jar")
 	cmd.Dir = "./Build"
-	cmd.Start()
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	err := cmd.Run()
+	if err != nil {
+		panic(err)
+	}
 }
 
 // DownloadFile will download a url to a local file. It's efficient because it will
