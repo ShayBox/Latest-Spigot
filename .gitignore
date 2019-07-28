@@ -1,2 +1,5 @@
-bin
-Build
+*
+!.vscode
+!.gitignore
+!main.go
+!README.md
