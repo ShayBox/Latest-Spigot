@@ -1,4 +1,5 @@
 # LatestSpigot
+
 A simple Go program that downloads and builds the latest spigot
 
 > This requires the Java Runtime (Oracle, OpenJDK, or compatible)  
