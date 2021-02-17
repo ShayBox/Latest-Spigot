@@ -1,4 +1,6 @@
 *
 !.gitignore
+!LICENSE
 !main.go
+!Makefile
 !README.md
