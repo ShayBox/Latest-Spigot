@@ -18,7 +18,7 @@ func main() {
 	DownloadFile("Build/BuildTools.jar", "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar")
 
 	println("Building Spigot/Craftbukkit")
-	cmd := exec.Command("java", append([]string{"-Xms512M", "-jar", "BuildTools.jar"}, os.Args...)...)
+	cmd := exec.Command("java", append([]string{"-Xms512M", "-jar", "BuildTools.jar", "-o", ".."}, os.Args...)...)
 	cmd.Dir = "./Build"
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -27,6 +27,9 @@ func main() {
 		panic(err)
 	}
 	cmd.Wait()
+
+	println("Deleting Build directory")
+	os.RemoveAll("Build")
 }
 
 // DownloadFile will download a url to a local file. It's efficient because it will
