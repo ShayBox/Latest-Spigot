@@ -1,6 +1,6 @@
 # LatestSpigot
 
-A simple Rust program that downloads and builds the latest spigot
+A simple Rust program that downloads and builds the latest Spigot
 
 ### Requirements:
 | Minecraft | Recommended |
