@@ -1,11 +1,16 @@
 # LatestSpigot
 
-A simple Go program that downloads and builds the latest spigot
+A simple Rust program that downloads and builds the latest spigot
 
-> This requires the Java Runtime ([OpenJDK], [Oracle], or compatible)  
-> To check if you have java installed, Open a powershell, command prompt, or terminal window and type `java -version`
+### Requirements:
+| Minecraft | Recommended |
+|-----------|-------------|
+| < 1.17    | [Java 8]    |
+| 1.17      | [Java 16]   |
+| 1.17 >    | [Java 17]   |
 
-[Download](https://github.com/ShayBox/LatestSpigot/releases)
+[Download](https://github.com/ShayBox/LatestSpigot/releases/latest)
 
-[OpenJDK]: https://adoptopenjdk.net/
-[Oracle]: https://java.com/en/download/manual.jsp
+[Java 8]: https://adoptium.net/temurin/releases?version=8
+[Java 16]: https://adoptium.net/temurin/releases?version=16
+[Java 17]:https://adoptium.net/temurin/releases?version=17
