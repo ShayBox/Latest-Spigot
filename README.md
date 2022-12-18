@@ -9,7 +9,7 @@
 
 # LatestSpigot
 
-A simple Rust program that downloads and builds the latest Spigot
+Rust CLI wrapper for the Spigot BuildTool
 
 ### Requirements:
 | Minecraft | Recommended |
@@ -17,6 +17,26 @@ A simple Rust program that downloads and builds the latest Spigot
 | < 1.17    | [Java 8]    |
 | 1.17      | [Java 16]   |
 | 1.17 >    | [Java 17]   |
+
+## Usage:
+```
+Option                                 Description
+------                                 -----------
+--compile <[NONE,CRAFTBUKKIT,SPIGOT]>  Software to compile
+--compile-if-changed                   Run BuildTools only when changes are
+                                         detected in the repository
+--dev                                  Development mode
+--disable-certificate-check            Disable HTTPS certificate check
+--disable-java-check                   Disable Java version check
+--dont-update                          Don't pull updates from Git
+--generate-docs                        Generate Javadoc jar
+--generate-source                      Generate source jar
+--help                                 Show the help
+-o, --output-dir <File>                Final jar output directory (default: .)
+--remapped                             Produce and install extra remapped jars
+--rev <String>                         Version to build (default: latest)
+--skip-compile                         Skip compilation
+```
 
 [Download](https://github.com/ShayBox/LatestSpigot/releases/latest)
 
