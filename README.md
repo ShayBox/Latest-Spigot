@@ -9,7 +9,7 @@
 
 # LatestSpigot
 
-Rust CLI wrapper for the Spigot BuildTool
+Command line wrapper to build Spigot
 
 ### Requirements:
 | Minecraft | Recommended |
